@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/crm?serverTimezone=UTC&characterEncoding=utf8
+    username: root
+    password: 123456
+    ##修改日志级别
+  logging:
+    file:
+      name: F:\\batis.log
+  mail:
+    host: smtp.163.com
+    username: haorongtao1998@163.com
+    password: YEOHQCXIDWYXRUVV
+  jackson:
+    date-format: yyyy-MM-dd
+
+mybatis:
+  mapper-locations:
+       classpath:mapper/*.xml

@@ -3,6 +3,7 @@ package com.qy25.sm.entity;
 import com.qy25.sm.entity.base.BaseEntity;
 
 import java.util.Date;
+import java.util.List;
 
 public class Category extends BaseEntity {
 
@@ -13,7 +14,15 @@ public class Category extends BaseEntity {
 
     private Long parentId;
 
+    private List<Category> children;
 
+    public List<Category> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<Category> children) {
+        this.children = children;
+    }
 
     public String getCategoryName() {
         return categoryName;

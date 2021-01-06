@@ -19,7 +19,7 @@ public class Supplier extends BaseEntity {
 
     private String supplierBank;
 
-    private String supplierBrankCode;
+    private String supplierBankCode;
 
 
     public String getSupplierName() {
@@ -70,12 +70,12 @@ public class Supplier extends BaseEntity {
         this.supplierBank = supplierBank == null ? null : supplierBank.trim();
     }
 
-    public String getSupplierBrankCode() {
-        return supplierBrankCode;
+    public String getSupplierBankCode() {
+        return supplierBankCode;
     }
 
-    public void setSupplierBrankCode(String supplierBrankCode) {
-        this.supplierBrankCode = supplierBrankCode == null ? null : supplierBrankCode.trim();
+    public void setSupplierBankCode(String supplierBankCode) {
+        this.supplierBankCode = supplierBankCode == null ? null : supplierBankCode.trim();
     }
 
 }

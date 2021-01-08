@@ -1,6 +1,7 @@
 package com.qy25.sm.service.base.impl;
 
 import com.github.pagehelper.PageInfo;
+import com.qy25.sm.entity.SupplierExample;
 import com.qy25.sm.mapper.base.BaseMapper;
 import com.qy25.sm.service.base.BaseService;
 import com.qy25.sm.utils.ReflectionUtils;
@@ -19,7 +20,6 @@ public class BaseServiceImpl<T, ID> implements BaseService<T, ID> {
     @Override
     public PageVo<T> findPage() {
         List<T> list = baseMapper.selectByExample(null);
-
         return setPageVo(list);
     }
 
